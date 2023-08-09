@@ -184,8 +184,11 @@ section h3 {
 }
 
 @media screen and (min-width: 1024px) {
-    .botao-menu {
-        display: none;
+    .roupas {
+        grid-template-columns: repeat(4, 20%);
+        row-gap: 5px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     .botao-produto {
@@ -193,15 +196,11 @@ section h3 {
     }
 
     .principal img {
-        height: 500px;
+        height: 400px;
     }
 
     .principal h3 {
     font-size: 30px;
-    }
-
-    .produto a img {
-        height: 600px;
     }
 
     .produtos {
