@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    color: #5c4742;
+}
+
+:root {
+    --headerBackground: #71a07c;
+    --borderColor: #d2b48c;
+    --textColor: #fff;
+}
+
+
+header {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 56px;
+    background-color: var(--headerBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+}
+
+h2 {
+    margin: 32px 0 32px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+form,
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+form input {
+    border: 2px solid var(--borderColor);
+    border-radius: 3px;
+    margin-right: 3px;
+    height: 30px;
+    width: 20%;
+}
+
+form button {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--borderColor);
+    color: var(--textColor);
+}
+
+form input:focus {
+    border-color: var(--borderColor);
+    box-shadow: 0 0 5px var(--borderColor);
+    outline: none;
+}
+
+.destaque {
+    display: flex;
+}
+
+.destaque .principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.destaque .principal img {
+    width: 100%;
+    max-width: 50%;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.sobre {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.roupas {
+    display: grid;
+    grid-template-columns: repeat(3, 18%);
+    column-gap: 18%;
+    row-gap: 3%;
+    margin-bottom: 50px;
+}
+
+
+.destaque,
+.produtos {
+    position: relative;
+    width: 980px;
+    margin: auto;
+}
+
+.produto img {
+    height: 360px;
+    width: 270px;
+    cursor: default;
+}
+
+.botao-produto {
+    background-color: var(--borderColor);
+    border: none;
+    padding: 5px;
+    margin-top: 2px;
+    display: block;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    background-color: var(--headerBackground);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: var(--textColor);
+}
